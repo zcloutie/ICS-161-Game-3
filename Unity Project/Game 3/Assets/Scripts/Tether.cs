@@ -4,20 +4,26 @@ using UnityEngine;
 
 public class Tether : MonoBehaviour {
 
-	public Transform player;
+    GameObject wall;
+    public Transform player;
+    public Transform player2;
 
 	private LineRenderer lr;
 
-	void Awake(){
-		lr = GetComponent<LineRenderer> ();
+    void Awake(){
+        lr = GetComponent<LineRenderer> ();
 	}
 
 	void FixedUpdate(){
+        lr.SetPosition(0, player2.position);
 		lr.SetPosition (1, player.position);
 		RaycastHit2D hit;
 		if (Physics2D.Linecast (transform.position, player.position)) {
 			hit = Physics2D.Linecast (transform.position, player.position);
-			Destroy(hit.collider.gameObject);	
+            if (hit.collider.gameObject.tag == "Enemy")
+            {
+                Destroy(hit.collider.gameObject);
+            }
 		}
 	}
 }
