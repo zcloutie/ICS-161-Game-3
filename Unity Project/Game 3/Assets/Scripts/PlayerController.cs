@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 [System.Serializable]
 public class Boundary
 {
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene("Death");
         }
     }
 

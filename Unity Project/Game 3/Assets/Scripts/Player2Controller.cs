@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Player2Controller : MonoBehaviour
 {
     public float speed;
@@ -18,7 +18,7 @@ public class Player2Controller : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene("Death");
         }
     }
 

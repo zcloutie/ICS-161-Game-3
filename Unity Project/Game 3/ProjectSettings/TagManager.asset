@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Player2
   - Wall
+  - Button
+  - Control
   layers:
   - Default
   - TransparentFX
