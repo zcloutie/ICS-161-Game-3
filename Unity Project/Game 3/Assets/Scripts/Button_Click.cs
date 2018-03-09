@@ -22,7 +22,7 @@ public class Button_Click : MonoBehaviour {
         }
         else if (Command =="Goal")
         {
-//            SceneManager.LoadScene("Controls");
+            SceneManager.LoadScene("Controls");
         }
         else if (Command =="StartOver")
         {
