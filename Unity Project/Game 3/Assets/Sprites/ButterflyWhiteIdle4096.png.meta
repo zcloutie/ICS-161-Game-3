@@ -1,0 +1,472 @@
+fileFormatVersion: 2
+guid: 1971f37e57b01bc4a8a66956aeb94834
+timeCreated: 1520654403
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ButterflyWhiteIdle4096_0
+    21300002: ButterflyWhiteIdle4096_1
+    21300004: ButterflyWhiteIdle4096_2
+    21300006: ButterflyWhiteIdle4096_3
+    21300008: ButterflyWhiteIdle4096_4
+    21300010: ButterflyWhiteIdle4096_5
+    21300012: ButterflyWhiteIdle4096_6
+    21300014: ButterflyWhiteIdle4096_7
+    21300016: ButterflyWhiteIdle4096_8
+    21300018: ButterflyWhiteIdle4096_9
+    21300020: ButterflyWhiteIdle4096_10
+    21300022: ButterflyWhiteIdle4096_11
+    21300024: ButterflyWhiteIdle4096_12
+    21300026: ButterflyWhiteIdle4096_13
+    21300028: ButterflyWhiteIdle4096_14
+    21300030: ButterflyWhiteIdle4096_15
+    21300032: ButterflyWhiteIdle4096_16
+    21300034: ButterflyWhiteIdle4096_17
+    21300036: ButterflyWhiteIdle4096_18
+    21300038: ButterflyWhiteIdle4096_19
+    21300040: ButterflyWhiteIdle4096_20
+    21300042: ButterflyWhiteIdle4096_21
+    21300044: ButterflyWhiteIdle4096_22
+    21300046: ButterflyWhiteIdle4096_23
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 276
+        width: 342
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 274
+        width: 302
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 272
+        width: 260
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_3
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 270
+        width: 216
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_4
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 268
+        width: 174
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_5
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 270
+        width: 215
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_6
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 272
+        width: 257
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_7
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 274
+        width: 302
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_8
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 276
+        width: 342
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_9
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 272
+        width: 300
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_10
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 272
+        width: 257
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_11
+      rect:
+        serializedVersion: 2
+        x: 3818
+        y: 270
+        width: 215
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_12
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 172
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_13
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 0
+        width: 216
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_14
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 4
+        width: 260
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_15
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 4
+        width: 300
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_16
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 8
+        width: 342
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_17
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 4
+        width: 300
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_18
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 4
+        width: 257
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_19
+      rect:
+        serializedVersion: 2
+        x: 2452
+        y: 0
+        width: 216
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_20
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 172
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_21
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 2
+        width: 216
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_22
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 4
+        width: 257
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ButterflyWhiteIdle4096_23
+      rect:
+        serializedVersion: 2
+        x: 3776
+        y: 4
+        width: 300
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
