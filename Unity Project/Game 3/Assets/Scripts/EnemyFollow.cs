@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyFollow : MonoBehaviour {
     GameObject target;
     public Transform position;
+	public float speed;
+
 
     void Awake()
     {
@@ -14,6 +16,6 @@ public class EnemyFollow : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         transform.LookAt(target.transform);
-        transform.Translate(Vector3.forward * 0.5f * Time.deltaTime);
+		transform.Translate(Vector3.forward * speed * Time.deltaTime);
 	}
 }

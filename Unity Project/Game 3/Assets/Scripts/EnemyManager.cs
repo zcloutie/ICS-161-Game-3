@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class EnemyManager : MonoBehaviour {
     //public PlayerHealth playerHealth;
@@ -9,8 +10,14 @@ public class EnemyManager : MonoBehaviour {
     public float spawnTime = 3f;
     public Transform[] spawnPoints;
 
+	private AIDestinationSetter ai1;
+	private AIDestinationSetter ai2;
 	// Use this for initialization
 	void Start () {
+		ai1 = enemy.GetComponent<AIDestinationSetter> ();
+		ai2 = enemy2.GetComponent<AIDestinationSetter> ();
+		ai1.target = GameObject.FindGameObjectWithTag("Player").transform;
+		ai2.target = GameObject.FindGameObjectWithTag("Player2").transform;
         InvokeRepeating("Spawn", spawnTime, spawnTime);
 	}
 	
