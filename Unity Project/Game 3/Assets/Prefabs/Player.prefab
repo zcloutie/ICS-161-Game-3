@@ -313,6 +313,7 @@ MonoBehaviour:
   Player2: {fileID: 0}
   chain_prefab: {fileID: 1477891512700204, guid: 516a2b5d39f27e246b7891c2264ebd6e,
     type: 2}
+  max_distance: 50
 --- !u!198 &198291691157043422
 ParticleSystem:
   m_ObjectHideFlags: 1

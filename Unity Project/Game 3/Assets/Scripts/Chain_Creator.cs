@@ -10,30 +10,59 @@ public class Chain_Creator : MonoBehaviour {
 
     GameObject[] chains;
     GameObject chain;
+
+    public float max_distance = 15f;
+    float distance = 0f;
+
+    bool is_disabled =false;
+    bool is_enabled = true;
 	// Use this for initialization
 	void Start () {
 
         GenerateChain();
-
-
-
     }
 
     // Update is called once per frame
     void Update () {
+        distance = Vector3.Distance(this.transform.position, Player2.transform.position);
+        
+        if (distance >= max_distance &&!is_disabled)
+        {
+            for(int i = 0; i != chains.Length; i++)
+            {
+                chains[i].GetComponent<SpriteRenderer>().enabled = false;
+            }
+            is_disabled = true;
+            is_enabled = false;
+            Debug.Log("Breaking");
 
+        }
+        else if(distance < max_distance &&!is_enabled)
+        {
+    
+                for (int i = 0; i != chains.Length; i++)
+                {
+                    chains[i].GetComponent<SpriteRenderer>().enabled = true;
+                }
+                is_disabled = false;
+                is_enabled = true;
+              Debug.Log("Linking");
+        }
     }
     void GenerateChain()
     {
 
         float distance = Mathf.Abs(Player2.transform.position.x - transform.position.x); //distance between 2 players
         float chain_size = chain_prefab.GetComponent<SpriteRenderer>().bounds.size.x/2;
-        int chain_amount = Mathf.RoundToInt(distance /chain_size );//how many chains to spawn
+        int chain_amount = Mathf.RoundToInt(distance /chain_size )*2;//how many chains to spawn
         GameObject previous = this.gameObject;//last chain position
         Rigidbody2D Last_Chain = this.GetComponent<Rigidbody2D>();//last rigidbody to connect
         float distance_x = (Player2.transform.position.x - this.transform.position.x) / chain_amount;
         float distance_y = (Player2.transform.position.y - this.transform.position.y) / chain_amount;
 
+
+        //generate array of chains for collsion
+        chains = new GameObject[chain_amount]; 
         
         for (int i = 0; i <= chain_amount;i++)
         {
@@ -47,7 +76,7 @@ public class Chain_Creator : MonoBehaviour {
                 chain.GetComponent<HingeJoint2D>().connectedBody = Last_Chain;
                 Last_Chain = chain.GetComponent<Rigidbody2D>();
 
-
+                chains[i] = chain;
             }
 
         }
