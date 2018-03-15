@@ -5220,7 +5220,12 @@ Prefab:
     - target: {fileID: 50582187965040314, guid: 9de566cdb487f9f45a0b5703b3e25bc1,
         type: 2}
       propertyPath: m_Constraints
-      value: 0
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 50582187965040314, guid: 9de566cdb487f9f45a0b5703b3e25bc1,
+        type: 2}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9de566cdb487f9f45a0b5703b3e25bc1, type: 2}
