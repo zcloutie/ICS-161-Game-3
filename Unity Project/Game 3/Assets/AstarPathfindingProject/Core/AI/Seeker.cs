@@ -185,6 +185,7 @@ namespace Pathfinding {
 		public void OnDestroy () {
 
             GameObject chain = GameObject.FindGameObjectWithTag("Main Chain");
+            if (chain != null)
             chain.GetComponent<Chain_Creator>().kills++;
 			ReleaseClaimedPath();
 			startEndModifier.OnDestroy(this);

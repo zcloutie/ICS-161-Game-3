@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Button_Click : MonoBehaviour {
 
+
+    // Use this for initialization
+
     public void On_Click (string Command) // The script that deals buttons. It takes a string command to serve different purposes
     {
     //    GameObject Player = GameObject.FindGameObjectWithTag("Player");
@@ -13,7 +16,11 @@ public class Button_Click : MonoBehaviour {
         {
 
             //restart
+
             SceneManager.LoadScene("Main");
+
+            GameObject.FindGameObjectWithTag("Main Chain").GetComponent<Chain_Creator>().kills = 0;
+            GameObject.FindGameObjectWithTag("Score Board").GetComponent<High_Score_Keeper>().manual_restart();
             Time.timeScale = 1;
         }
         else if (Command == "Start")
