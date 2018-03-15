@@ -16,6 +16,9 @@ public class Chain_Creator : MonoBehaviour {
 
     bool is_disabled =false;
     bool is_enabled = true;
+
+    public int kills = 0;
+
 	// Use this for initialization
 	void Start () {
 

@@ -10,6 +10,8 @@ TagManager:
   - Wall
   - Button
   - Control
+  - Main Chain
+  - Score Board
   layers:
   - Default
   - TransparentFX
