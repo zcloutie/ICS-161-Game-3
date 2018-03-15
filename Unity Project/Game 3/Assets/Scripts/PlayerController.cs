@@ -18,6 +18,16 @@ public class PlayerController : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D> ();
 	}
 
+    void Update()
+    {
+        Vector2 moveDirection = gameObject.GetComponent<Rigidbody2D>().velocity;
+        if (moveDirection != Vector2.zero)
+        {
+            float angle = Mathf.Atan2(-moveDirection.x, moveDirection.y) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
