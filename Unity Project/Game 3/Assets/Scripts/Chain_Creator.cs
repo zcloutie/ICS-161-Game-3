@@ -19,39 +19,31 @@ public class Chain_Creator : MonoBehaviour {
 
     public int kills = 0;
 
+    bool on_wall = false;
 	// Use this for initialization
 	void Start () {
 
         GenerateChain();
     }
 
+
+    
     // Update is called once per frame
     void Update () {
         distance = Vector3.Distance(this.transform.position, Player2.transform.position);
-        
+
+        CheckChain();
         if (distance >= max_distance &&!is_disabled)
         {
-            for(int i = 0; i != chains.Length; i++)
-            {
-                chains[i].GetComponent<SpriteRenderer>().enabled = false;
-                chains[i].GetComponent<ParticleSystem>().enableEmission = false;
-            }
-            is_disabled = true;
-            is_enabled = false;
-            Debug.Log("Breaking");
+            BreakChain();
+          //  Debug.Log("Breaking");
 
         }
-        else if(distance < max_distance &&!is_enabled)
+        else if(distance < max_distance &&!is_enabled && !on_wall)
         {
-    
-                for (int i = 0; i != chains.Length; i++)
-                {
-                    chains[i].GetComponent<SpriteRenderer>().enabled = true;
-                chains[i].GetComponent<ParticleSystem>().enableEmission = true;
-            }
-                is_disabled = false;
-                is_enabled = true;
-              Debug.Log("Linking");
+
+            LinkChain();
+         //     Debug.Log("Linking");
         }
     }
     void GenerateChain()
@@ -86,5 +78,51 @@ public class Chain_Creator : MonoBehaviour {
 
         }
         Player2.GetComponent<HingeJoint2D>().connectedBody = Last_Chain;
+    }
+
+    void BreakChain()
+    {
+        for (int i = 0; i != chains.Length; i++)
+        {
+            chains[i].GetComponent<SpriteRenderer>().enabled = false;
+            chains[i].GetComponent<ParticleSystem>().enableEmission = false;
+        }
+        is_disabled = true;
+        is_enabled = false;
+        
+    }
+
+    void LinkChain()
+    {
+        for (int i = 0; i != chains.Length; i++)
+        {
+            chains[i].GetComponent<SpriteRenderer>().enabled = true;
+            chains[i].GetComponent<ParticleSystem>().enableEmission = true;
+        }
+        is_disabled = false;
+        is_enabled = true;
+    }
+    public void CheckChain()
+    {
+        int count = 0;
+        for (int i = 0; i != chains.Length; i++)
+        {
+            if (chains[i].GetComponent<Chain_Behavior>().on_collision_wall == true)
+            {
+               // Debug.Log("On wall");
+                BreakChain();
+                on_wall = true;
+            }
+            else
+            {
+                count++;
+            }
+        }
+        if (count == chains.Length)
+        {
+            LinkChain();
+            on_wall = false;
+        }
+      
     }
 }

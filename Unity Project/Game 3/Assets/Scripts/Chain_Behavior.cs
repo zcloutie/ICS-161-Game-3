@@ -5,6 +5,8 @@ using UnityEngine;
 public class Chain_Behavior : MonoBehaviour {
     public AudioClip hit;
 
+
+    public bool on_collision_wall = false;
     // Use this for initialization
     void Start () {
         GetComponent<AudioSource>().playOnAwake = false;
@@ -19,12 +21,22 @@ public class Chain_Behavior : MonoBehaviour {
             GetComponent<AudioSource>().Play();
             Destroy(collision.gameObject);
         }
+       
 
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            
+            on_collision_wall = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-  
+        if (collision.gameObject.tag == "Wall")
+            on_collision_wall = false;
     }
 
 
