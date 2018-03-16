@@ -12,6 +12,7 @@ TagManager:
   - Control
   - Main Chain
   - Score Board
+  - Music
   layers:
   - Default
   - TransparentFX
