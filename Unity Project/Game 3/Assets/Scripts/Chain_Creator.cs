@@ -34,6 +34,7 @@ public class Chain_Creator : MonoBehaviour {
             for(int i = 0; i != chains.Length; i++)
             {
                 chains[i].GetComponent<SpriteRenderer>().enabled = false;
+                chains[i].GetComponent<ParticleSystem>().enableEmission = false;
             }
             is_disabled = true;
             is_enabled = false;
@@ -46,7 +47,8 @@ public class Chain_Creator : MonoBehaviour {
                 for (int i = 0; i != chains.Length; i++)
                 {
                     chains[i].GetComponent<SpriteRenderer>().enabled = true;
-                }
+                chains[i].GetComponent<ParticleSystem>().enableEmission = true;
+            }
                 is_disabled = false;
                 is_enabled = true;
               Debug.Log("Linking");
