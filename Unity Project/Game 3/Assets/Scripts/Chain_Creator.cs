@@ -109,7 +109,7 @@ public class Chain_Creator : MonoBehaviour {
         {
             if (chains[i].GetComponent<Chain_Behavior>().on_collision_wall == true)
             {
-               // Debug.Log("On wall");
+
                 BreakChain();
                 on_wall = true;
             }
